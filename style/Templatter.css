@@ -1,0 +1,325 @@
+/* colores que uso  */
+/*  de la barra #8f5353 */
+/*  del fondo #333 */
+/*  de los links: pink */
+body {
+    background-color: #333;
+}
+
+#containerWrapper{
+    background-color: #FFF;
+}
+
+#logopre{
+    color: black;
+    font-family: Kaiti;
+    font-size: 20px;
+    /* height: 100px; */
+}
+
+#logoid {
+    color: black;
+    font-family: Kaiti;
+    font-size: 40px;
+    /* height: 100px; */
+}
+
+div#navbar, div.spacer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* barra de links */
+div#navbar {
+    /* verde */
+    /* background-color: #8FC73E; */
+    font-size: 15px;
+    /* font-weight: bold; */
+    background-color: #8f5353;
+    color: white;
+    padding: 10px 0;
+}
+
+div#navbar ul {
+    list-style: none;
+    display: block;
+    margin: 0 10px;
+}
+
+div#navbar ul li a{
+    color: white;
+    float: left;
+    margin: 0 1.5em;
+}
+
+/* vamos por aca */
+div#navbar ul li a:hover{
+    color: pink;
+}
+
+div.spacer {
+    /* cafecillo */
+    background-color: #8F5353;
+    height: 1em;
+}
+
+div.topSection div {
+/* no le puedo poner el mismo tamaño siempre porque va a afectar a index */
+/* border: solid 10px #e5e5e6; */
+/* con 280??? NORMAL */
+/* height: 280px; */
+/* height: 280px; */
+/* background-color: #444; */
+}
+
+div.topSection div p {
+    margin: 10px;
+}
+
+img#poster {
+    width: 360px;
+    height: 280px;
+}
+
+div#footer {
+    background-color: #e5e5e6;
+}
+
+div#footer div p{
+    margin: 5px;
+}
+
+div#legal {
+    clear:both;
+    margin: 10px;
+}
+/************************ Typography ***************/
+div#navbar ul li {
+    font: bold 1em Arial;
+}
+
+p {
+    font: .8em/1.4em Georgia;
+    margin: .2em 0;
+}
+
+p#headlineText {
+    font: .9em/1.4em Georgia;
+    
+}
+
+div#legal p {
+    text-align:center;
+    font: bold .7em Arial;
+}
+
+h1 {
+    font: bold 1.5em Helvetica;
+    margin: .2em 0;
+    text-align: center;
+}
+a {
+    /* color: #1162b7; */
+    text-decoration: none;
+}
+
+h2 { 
+    font: bold 1.3em Helvetica;
+    margin: .2em 0;
+    text-align: center;
+}
+ #legal{
+     color: #EEE;
+}
+
+ /* ::::::::::::::::::::::::::::::::::::::::::::::::::  SCROLLABLE :::::::::::::::::::::::::::::::::::::::::::::::::: */
+  /* root element for the whole scrollable setup */
+  div.scrollable {  
+  position:relative;
+  overflow:hidden;
+  /* width: 646px;	  */
+  /* asi estaba antes pero se desacomodo el tamaño al quitarle los navi */
+  /* width: 830px; */
+
+  /* descompone algo esto??? */
+  width: 939px;
+
+  /* ORIGINAl */
+  /* height:300px;	 */
+  height:200px;
+  }
+
+  /* 
+  root element for scrollable items. It is 
+  absolutely positioned with large width. 
+  */
+  #thumbs {	
+  position:absolute;
+  width:20000em;	
+  clear:both;
+  /* border:1px solid #222; */
+  }
+
+  /* custom positioning for navigational links */
+  a.prev, a.next {
+  margin-top:118px;
+  }
+
+  /* single item */
+  #thumbs div {
+  float:left;
+  /* width:214px; */
+  width:400px;			/*para que quepa el DISH*/
+  height:300px;
+  background:#333 url(images/h150.png) repeat-x 0 146px;
+  color:#fff;
+  border-left:1px solid #333;
+  cursor:pointer;
+  }
+
+  /* style when mouse is over the item */
+  #thumbs div.hover {
+  background-color:#444;	
+  }
+
+  /* style when element is active (clicked) */
+  #thumbs div.active {
+  background-color:#066;
+  cursor:default;
+  }
+
+  #thumbs h3, #thumbs p, #thumbs span {
+  margin:13px;		
+  font-family:"bitstream vera sans";
+  font-size:13px;
+  color:#fff;	
+  }
+
+  #thumbs h3 em {
+  font-style:normal;
+  color:yellow;
+}
+  /* -------------------------- TABS  --------------------------*/
+  /* lo importo del sitio del wey de jquery tools */
+
+/* tab pane styling */
+#tabsWrapper{
+    height:700px;
+}
+
+/* single tab pane */
+/* div.panes div { */
+/*     display:none;		 */
+/*     padding:15px 10px; */
+/*     border:1px solid #999; */
+/*     border-top:0; */
+/*     /\* de que tamaño será bueno que lo hagamos? *\/ */
+/*     height: 500px; */
+/*     font-size:14px; */
+/*     background-color:#fff; */
+/* } */
+
+
+/* root element for tabs  */
+ul.tabs {  
+	margin:0 !important; 
+	padding:0;
+	height:30px;
+	border-bottom:1px solid #666;
+}
+
+/* single tab */
+ul.tabs li {  
+	float:left;	 
+	padding:0; 
+	margin:0;  
+	list-style-type:none;	
+}
+
+/* link inside the tab. uses a background image */
+ul.tabs a { 
+	float:left;
+	font-size:13px;
+	display:block;
+	padding:5px 30px;	
+	text-decoration:none;
+	border:1px solid #666;	
+	border-bottom:0px;
+	height:18px;
+	background-color:#efefef;
+	color:#777;
+	margin-right:2px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright:4px;
+	position:relative;
+	top:1px;	
+}
+
+ul.tabs a:hover {
+    /* background-color:#F7F7F7; */
+    background-color:#b87d7d;
+    color:#EEE;
+}
+	
+/* selected tab */
+ul.tabs a.current {
+    /* a que lo cambiaré???  */
+    background-color:#8f5353;
+    /* border-bottom:2px solid #8f5353;	 */
+    /* color:#000;	 */
+    color:#fff;
+    cursor:default;
+}
+	
+/* tab pane */
+div.panes div {
+	display:none;
+	border:1px solid #666;
+	border-width:0 1px 1px 1px;
+	min-height:150px;
+	height: 500px;
+	padding:15px 20px;
+	background-color:#fff;	
+}
+/* lo del TOOLTIP  ----------------------------------------------------------------------------------------------------------------------------*/
+/* tooltip styling. uses a background image (a black box with an arrow) */ 
+#trigger {
+    /* background:transparent url(http://static.flowplayer.org/img/box/right/tools.png) no-repeat scroll 0 50%; */
+    /* color:#333; */
+    /* display:block; */
+    /* font-size:14px; */
+    /* height:125px; */
+    /* padding:18px 80px 20px 15px; */
+    /* text-decoration:none; */
+    /* width:118px !important; */
+    /* position:relative; */
+    /* top:100px; */
+}
+
+/* simple mouseover effect for the trigger */
+/* #trigger:hover { */
+/*     color:#000; */
+/* } */
+
+/* fin del TOOLTIP ---------------------------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* aqui voy poniendo el css para el CONTENIDO de cada una de las tabs  */
+#menuHEADTITLE{
+    font-size: 30px;
+    font-family: Kaiti;
+}
+.menuenTAB{
+    font-family: Kaiti;
+}
+
+#courseTABLE{
+    font-family: Kaiti;
+}
+
+#courseHEAD{
+    text-decoration: underline;
+    font-family: KaiTi;
+    padding-right: 100px;
+    font-size: 20px;
+}
